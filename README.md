@@ -1,5 +1,5 @@
 # BMI-Calculator
-we can calculate Bmi easily 
+With this Calculator we can calculate Bmi easily 
 
 Tech stack:
           1.html
