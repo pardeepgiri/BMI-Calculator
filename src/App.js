@@ -54,8 +54,8 @@ function App(){
   return(
     <div id='main'>
       <h1 className='head'>BMI-Tracker</h1>
-      <input placeholder="height in cm" value={newhe} onChange={(e)=>setnewhe(e.target.value)}></input>
-      <input placeholder="weight in kg" value={newwe} onChange={(e)=>setnewwe(e.target.value)}></input><br></br>
+      <input placeholder="height in cm" value={newhe} onChange={(e)=>setnewhe(e.target.value)} type="number" min="0"></input>
+      <input placeholder="weight in kg" value={newwe} onChange={(e)=>setnewwe(e.target.value)} type="number" min="0"></input><br></br>
       <button onClick={calculate} className='btn'>Calculate BMI</button>
 
 <div className='trbg'>
