@@ -5,8 +5,7 @@ import './App.css';
 
 
 function App(){
-  const[height,setheight]=useState([]);
-  const[weight,setweight]=useState([]);
+
   const[bm,setbm]=useState([]);
   const[list,setlist]=useState([]);
 
@@ -15,6 +14,8 @@ function App(){
 
   const[newhe,setnewhe]=useState("");
   const[newwe,setnewwe]=useState("");
+  const[height,setheight]=useState([]);
+  const[weight,setweight]=useState([]);
   function calculate(){
     let hm=(newhe/100);
     let hs=(hm*hm);
@@ -61,7 +62,7 @@ function App(){
 <div className='trbg'>
 
 {
-   height!==[]&&weight!==[] && list!==[] && list.map((item,i)=>
+    list.map((item,i)=>
   <ul key={i} className='ul' >
     <li><span className='bmi'> BMI:{item}</span><span className='xbtn'><button onClick={()=>remove(i)}>x</button></span><br></br>
         <div className='top'>
